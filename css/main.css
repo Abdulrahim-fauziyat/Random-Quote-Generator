@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: #a3ccf8, #041f3b;
+    font-weight: bolder;
+    background: linear-gradient(to right, 
+        hsl(0, 17%, 61%) 0%, 
+        #3186e7 20%, 
+        #a4c1e9 40%, 
+        hsl(215, 25%, 25%) 60%, 
+        #0c3cc2 80% 
+    );
+    background-size: 1000% 100%; 
+    animation: gradientAnimation 10s linear infinite; 
+}
+
+h1 {
+    color: #fff;
+}
+
+#quote-container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #007bff;
+    box-shadow: 1px 1px 1px whitesmoke;
+    color: #fff;
+}
+
+#quote-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#new-quote-btn {
+    background-color: #041f3b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
